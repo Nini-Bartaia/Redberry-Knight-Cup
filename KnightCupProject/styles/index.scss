@@ -1,0 +1,69 @@
+@import "./palette";
+@import "./reset";
+@import "./shared";
+
+
+@include page;
+.component-2{
+    background-color:#FD5334;
+}
+
+.component-2 > :nth-child(1){
+    position: absolute;
+    color: $white;
+    font-size: 80px;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+    left: 8.5%;
+    top:24.5%;
+    line-height: 109.12px;
+    right: 2.6%;
+}
+.component-2 {:nth-child(2){
+    position: absolute;
+    font-weight: 700;
+    font-size: 20px;
+    color:$black;
+    line-height: 27.28px;
+    font-family: 'Nunito', sans-serif;
+    top:28.3%;
+    left:60.8%;
+}
+}
+.component-2 { :nth-child(3){
+    position: absolute;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 109.12px;
+    color:$white;
+    left: 8.5%;
+    top: 36.1%;
+}
+}
+.component-2 {
+     button{
+    position: absolute;
+    display: flex;
+    border-radius: 8px;
+    width: 191px;
+    height: 53px;
+    background-color: $black;
+    color:$white;
+    font-family: 'Open Sans', sans-serif;
+    padding: 13px 24px;
+    font-size: 20px;
+    line-height: 27.24px;
+    left: 8.5%;
+    top:55.6%;
+    border: none;
+    gap:10px;
+    
+    
+}
+ button:hover{
+    border: 2px solid $hover;
+
+ }
+
+}
