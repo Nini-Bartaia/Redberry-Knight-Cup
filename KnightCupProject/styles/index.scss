@@ -42,28 +42,7 @@
 }
 }
 .component-2 {
-     button{
-    position: absolute;
-    display: flex;
-    border-radius: 8px;
-    width: 191px;
-    height: 53px;
-    background-color: $black;
-    color:$white;
-    font-family: 'Open Sans', sans-serif;
-    padding: 13px 24px;
-    font-size: 20px;
-    line-height: 27.24px;
-    left: 8.5%;
-    top:55.6%;
-    border: none;
-    gap:10px;
+    @include button;
     
-    
-}
- button:hover{
-    border: 2px solid $hover;
-
- }
 
 }

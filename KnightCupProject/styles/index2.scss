@@ -1,0 +1,153 @@
+@import "./palette";
+@import "./reset";
+@import "./shared";
+
+@include page;
+
+.head{
+    height: 7%;
+    border-bottom: 1px solid $border;
+    position: relative;
+    .header{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        position: absolute;
+        top:35.5%;
+        left: 2.5%;
+        
+    }
+}
+
+.frame{
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid#E5E6E8;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24.51px;
+    
+
+}
+
+.frame-1{
+    color:$black;
+    position: absolute;
+    left:10%;
+    top:12%;
+}
+.line{
+    width: 174px;
+    height:0px;
+    border: 1px solid rgba(185, 180, 196, 0.3);
+    position: absolute;
+    top:13.6%;
+    left:15%;
+}
+.frame-2{
+    color: #95939A;
+    background-color: #F5F5F5;
+    position: absolute;
+    left: 33.5%;
+    top:11.9%;
+
+}
+.num{
+    position: absolute;
+    left: 35%;
+    top: 15%;
+}
+.comments{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    color:#000000;
+}
+.com-1{
+    position: absolute;
+    left:5%;
+    top:16%;
+}
+.com-2{
+    position: absolute;
+    left: 29%;
+    top:16%;
+}
+.article{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    color:#000000;
+    position: absolute;
+    top: 27%;
+    left: 5%;
+}
+.com2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color:#95939A;
+    position: absolute;
+    top: 32%;
+    left: 5%;
+}
+form{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    .wrapper{
+        position: relative;
+        display: inline-block;
+        z-index: 1;
+    }
+    @include form;
+    .wrapper-1:after{
+        left: 60px;
+    }
+    .wrapper-2:after{
+        left: 135px;
+    }
+    .wrapper-3:after{
+        left: 145px;
+           
+    }
+    .wrapper-4:after{
+        left: 125px;   
+    }
+    
+}
+.component-2{
+        .back{
+        position: absolute;
+        display: flex;
+        border-radius: 8px;
+        height: 50px;
+        background-color: $white;
+        color:#212529;
+        font-family: 'Open Sans', sans-serif;
+        padding: 13px 24px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        left: 5%;
+        top:75%;
+        border: 2px solid $black;
+        gap:10px;
+        width: 100px;
+        }
+
+        @include button;
+        .next{
+            width: 128px;
+            height: 53px;
+            left: 68%;
+            top: 75%;
+        }
+}
+

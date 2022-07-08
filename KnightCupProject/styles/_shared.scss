@@ -43,6 +43,65 @@
     }
     
 }
+@mixin button{
+    button{
+        position: absolute;
+        display: flex;
+        border-radius: 8px;
+        width: 191px;
+        height: 53px;
+        background-color: $black;
+        color:$white;
+        font-family: 'Open Sans', sans-serif;
+        padding: 13px 24px;
+        font-size: 20px;
+        line-height: 27.24px;
+        left: 8.5%;
+        top:55.6%;
+        border: none;
+        gap:10px;
+        
+        
+    }
+     button:hover{
+        border: 2px solid $hover;
+        cursor: pointer;
+    
+     }
+}
+@mixin form{
+    .wrapper{
+        position: relative;
+        display: inline-block;
+        z-index: 1;
+    }
+    .wrapper input{
+        width: 743px;
+        height: 30px;
+        border:none;
+        border-bottom: 1px solid inset 0px -1px 0px rgba(0, 0, 0, 0.125);
+        outline: none;
+        background: #FFFFFF;
+        box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
+        border-radius: 4px;
+        margin-bottom: 30px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        margin-bottom: 48px;
+        line-height: 30px;
+        padding-right: 14px;
+        color: #212529;
+    }
+    .wrapper:after {
+        content: "*";
+        position: absolute;
+        color: red;
+        z-index: 5;
+        top: 9px;
+      }
+}
 
 
 

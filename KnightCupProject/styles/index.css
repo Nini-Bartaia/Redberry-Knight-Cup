@@ -149,6 +149,7 @@ table {
 }
 .component-2 button:hover {
   border: 2px solid rgba(194, 165, 249, 0.8);
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=index.css.map */
