@@ -259,6 +259,7 @@ table {
   right: 16%;
   color: #95939A;
   top: 16%;
+  cursor: pointer;
 }
 #form .wrapper .line2 {
   width: auto;
@@ -312,6 +313,14 @@ table {
   border: 2px solid #212529;
   gap: 10px;
   width: 100px;
+}
+.component-2 .back:hover {
+  background-color: #95939A;
+  border: none;
+}
+.component-2 a {
+  text-decoration: none;
+  color: #212529;
 }
 .component-2 button {
   position: absolute;

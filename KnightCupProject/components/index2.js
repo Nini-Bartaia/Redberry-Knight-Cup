@@ -1,6 +1,6 @@
 const userName=document.getElementById("name");
 const emailAdress=document.getElementById("email");
-const phone=document.getElementById("id");
+const phone=document.getElementById("phone");
 const dateTime= document.getElementById("date");
 const form=document.getElementById("form");
 const errorMsg=document.getElementsByClassName("error");
@@ -15,12 +15,17 @@ const fail=document.getElementsByClassName("failed");
 form.addEventListener("submit",(e)=>{
   
     validateName();
+    validateEmail();
     e.preventDefault();
    
     // validate(userName,0,"please enter valid name");
     // validate(emailAdress,1,"email adress is not correct");
     
 })
+
+document.querySelectorAll(".mark" ).forEach(btn =>{
+    btn.addEventListener("click",function(){this.parentElement.style.display="none"})});
+
 
 // function validate(id,index,message){
 //     if(id==userName){
@@ -85,6 +90,9 @@ function validateName(){
                 success[index].style.opacity="0";
                // title[index].innerHTML=title2;
                 title[index].innerHTML=message;
+                userName.style.background="#FFEFEF";
+                userName.style.color="#DC3545";
+
                
             } else{
                 errorMsg[index].style.opacity="0";
@@ -112,6 +120,8 @@ function validateEmail(){
         errorMsg[index].style.display="block";
         success[index].style.opacity="0";
         title[index].innerHTML=message;
+        emailAdress.style.background="#FFEFEF";
+        emailAdress.style.color="#DC3545";
     } else{
         errorMsg[index].style.opacity="0";
         errorMsg[index].style.display="none"
@@ -122,6 +132,32 @@ function validateEmail(){
     
 
 }
+
+
+function validatePhone(){
+    let id=phone;
+    let index=2;
+    let message="Invalid phone";
+    let message2="Please enter valid phone number";
+    let reg=/^\d{9}$/;
+    let tel=reg.test(id.value);
+    if(id.value.length==0 || id.value.length>9 || tel==false){
+        err[index].innerHTML=message2;
+        errorMsg[index].style.opacity="1";
+        fail[index].style.opacity="1";
+        errorMsg[index].style.display="block";
+        success[index].style.opacity="0";
+        title[index].innerHTML=message;
+        phone.style.background="#FFEFEF";
+        phone.style.color="#DC3545";
+    }else{
+        errorMsg[index].style.opacity="0";
+        errorMsg[index].style.display="none"
+        success[index].style.opacity="1";
+        fail[index].style.opacity="0";
+    }
+}
+
 
 
 
