@@ -75,7 +75,7 @@ form.addEventListener("submit",(e)=>{
 function validateName(){
     let id=userName;
     let index=0;
-    let message="invalid name";
+    let message="Invalid name";
     let message2="Please enter valid name"
     if(id.value.trim()==="" || id.value== null || id.value.trim().length <=2 ||id.value.length==0){
                 err[index].innerHTML=message2;
@@ -89,7 +89,7 @@ function validateName(){
             } else{
                 errorMsg[index].style.opacity="0";
                 errorMsg[index].style.display="none"
-                errorMsg[index].innerHTML="";
+                //errorMsg[index].innerHTML="";
                 success[index].style.opacity="1";
                 //sign[index].content="";
                 fail[index].style.opacity="0";
@@ -97,4 +97,31 @@ function validateName(){
             }
 
 }
+
+function validateEmail(){
+    let id=emailAdress;
+    let index=1;
+    let message="Invalid email";
+    let message2="Please enter valid email address"
+    let regex=/^[^@]+@(redberry)\.ge$/i;
+    let valid=regex.test(id.value);
+    if(id.value.length==0 || valid==false){
+        err[index].innerHTML=message2;
+        errorMsg[index].style.opacity="1";
+        fail[index].style.opacity="1";
+        errorMsg[index].style.display="block";
+        success[index].style.opacity="0";
+        title[index].innerHTML=message;
+    } else{
+        errorMsg[index].style.opacity="0";
+        errorMsg[index].style.display="none"
+        success[index].style.opacity="1";
+        fail[index].style.opacity="0";
+
+    }
+    
+
+}
+
+
 
