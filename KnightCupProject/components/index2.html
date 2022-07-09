@@ -10,7 +10,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    
+
     <link rel="stylesheet" href="/styles/index2.css">
+    <!-- <script src="index2.js"></script> -->
+    <script type="text/javascript" src="index2.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -30,34 +34,47 @@
             <span class="comments com-2">Chess experience</span>
             <span class="article">Personal information</span>
             <span class="com2">This is Basic Information Fields</span>
-            <form action="/" >
+            <form action="/" id="form" >
                 <div class="wrapper wrapper-1">
-                <input type="text" name="user"
+                <input type="text" name="user" id="name" 
                 onfocus="if(this.value==this.defaultValue)this.value=''"
                 onblur="if(this.value=='')this.value=this.defaultValue"
-                value="Name" maxlength="19" required /> </div>
-                <div class="wrapper wrapper-2"><input type="email" name="user"
+                value="Name" maxlength="19" required /> <i class="fa-solid fa-circle-check success"></i>
+                <div class="error">error</div>
+             
+             </div>
+             
+                <div class="wrapper wrapper-2"><input type="email" name="user" id="email"
                 onfocus="if(this.value==this.defaultValue)this.value=''"
                 onblur="if(this.value=='')this.value=this.defaultValue"
                 onfocus="if(this.value==this.defaultValue)this.value=''"
                 onblur="if(this.value=='')this.value=this.defaultValue"
-                value="Email address" maxlength="19" required /></div>
-                <div class="wrapper wrapper-3"><input type="tel" name="user"
+                value="Email address" maxlength="19" required />
+                <div class="error">error</div>
+            </div>
+                <div class="wrapper wrapper-3"><input type="tel" name="user" id="tel"
                 onfocus="if(this.value==this.defaultValue)this.value=''"
                 onblur="if(this.value=='')this.value=this.defaultValue"
-                value="Phone number" maxlength="19" required /></div>
-                <div class="wrapper wrapper-4"><input type="text" name="user"
+                value="Phone number" maxlength="19" required />
+                <div class="error">error</div>
+            </div>
+                <div class="wrapper wrapper-4"><input type="text" name="user" id="date"
                 onfocus="if(this.value==this.defaultValue)this.value=''"
                 onblur="if(this.value=='')this.value=this.defaultValue"
-                value="Date of birth" maxlength="19" required /></div>
-           
+                value="Date of birth" maxlength="19" required />
+                <div class="error">error</div>
+            </div>
+                
+                
+                <button class="back" type="button">Back</button>
+                <button class="next" type="submit">Next<img src="/assets/arrow.png" alt="picture"></button>
             </form>
-            <button class="back">Back</button>
-            <button class="next">Next<img src="/assets/arrow.png" alt="picture"></button>
+            
   
         </div>
-
         <div class="component-3"><img src="/assets/unsplash_27LH_0jXKYI.png" alt=""></div>
     </div>
+   
 </body>
+
 </html>

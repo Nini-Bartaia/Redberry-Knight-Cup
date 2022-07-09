@@ -195,10 +195,25 @@ form {
   top: 40%;
   left: 5%;
 }
+form .wrapper .error {
+  width: 200px;
+  height: 200px;
+  border: 2px solid red;
+  color: blue;
+  font-size: 20px;
+  opacity: 0;
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  right: 20%;
+}
 form .wrapper {
   position: relative;
   display: inline-block;
   z-index: 1;
+}
+form .wrapper .success {
+  color: green;
 }
 form .wrapper {
   position: relative;
@@ -257,7 +272,7 @@ form .wrapper-4:after {
   font-size: 20px;
   line-height: 24px;
   left: 5%;
-  top: 75%;
+  top: 100%;
   border: 2px solid #212529;
   gap: 10px;
   width: 100px;
@@ -287,7 +302,7 @@ form .wrapper-4:after {
   width: 128px;
   height: 53px;
   left: 68%;
-  top: 75%;
+  top: 100%;
 }
 
 /*# sourceMappingURL=index2.css.map */

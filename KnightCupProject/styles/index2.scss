@@ -101,10 +101,29 @@ form{
     position: absolute;
     top: 40%;
     left: 5%;
+    .wrapper .error{
+        width: 200px;
+        height: 200px;
+        border:2px solid red;
+        color:blue;
+        font-size: 20px;
+        opacity: 0;
+        display: none;
+        position: absolute;
+        bottom: 100%;
+        right: 20%;
+    }
     .wrapper{
         position: relative;
         display: inline-block;
         z-index: 1;
+        
+            .success{
+                color:green;
+                
+            }
+            
+        
     }
     @include form;
     .wrapper-1:after{
@@ -136,7 +155,7 @@ form{
         font-size: 20px;
         line-height: 24px;
         left: 5%;
-        top:75%;
+        top:100%;
         border: 2px solid $black;
         gap:10px;
         width: 100px;
@@ -147,7 +166,7 @@ form{
             width: 128px;
             height: 53px;
             left: 68%;
-            top: 75%;
+            top: 100%;
         }
 }
 
