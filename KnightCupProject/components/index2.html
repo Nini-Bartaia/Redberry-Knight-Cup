@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ab59ec5346.js" crossorigin="anonymous"></script>
     
 
     <link rel="stylesheet" href="/styles/index2.css">
@@ -44,8 +45,25 @@
              
              </div> -->
              <!-- //<label for="name">Name</label> -->
-             <input type="text" id="name" placeholder="name">
-             <div class="error">error</div>
+             <div class="wrapper wrapper-1">
+             <input type="text" id="name" placeholder="name" onkeyup="validateName()">
+             <i class="fa-solid fa-circle-check success "></i>
+             <div class="error"><i class="fa-solid fa-circle-exclamation failed"></i><span class="errortitle"></span><i class="fa-solid fa-xmark mark"></i><div class="line2"></div><span class="errorname"></span></div></div>
+             <div class="wrapper wrapper-2">
+             <input type="email" id="email" placeholder="Email address">
+             <i class="fa-solid fa-circle-check success "></i>
+             
+             <div class="error"><i class="fa-solid fa-circle-exclamation failed"></i><span class="errortitle"></span><i class="fa-solid fa-xmark mark"></i><div class="line2"></div><span class="errorname"></span> </div></div>
+             <div class="wrapper wrapper-3">
+             <input type="tel" id="phone" placeholder="Phone number">
+             <i class="fa-solid fa-circle-check success "></i>
+            
+             <div class="error"> <i class="fa-solid fa-circle-exclamation failed"></i><span class="errortitle"></span><i class="fa-solid fa-xmark mark"></i><div class="line2"></div><span class="errorname"></span></div></div>
+             <div class="wrapper wrapper-4">
+            <input type="text" id="date" placeholder="Date of birth" onfocus="(this.type='date')">
+            <i class="fa-solid fa-circle-check success "></i>
+            
+            <div class="error"><i class="fa-solid fa-circle-exclamation failed"></i><span class="errortitle"></span><i class="fa-solid fa-xmark mark"></i><div class="line2"></div><span class="errorname"></span></div></div>
              
                 <!-- <div class="wrapper wrapper-2"><input type="email" name="user" id="email"
                 onfocus="if(this.value==this.defaultValue)this.value=''"
@@ -67,8 +85,7 @@
                 value="Date of birth" maxlength="19" required />
                 <div class="error">error</div>
             </div> -->
-                
-                
+
                 <button class="back" type="button">Back</button>
                 <button class="next" type="submit">Next<img src="/assets/arrow.png" alt="picture"></button>
             </form>

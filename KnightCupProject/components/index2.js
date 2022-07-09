@@ -4,43 +4,97 @@ const phone=document.getElementById("id");
 const dateTime= document.getElementById("date");
 const form=document.getElementById("form");
 const errorMsg=document.getElementsByClassName("error");
+const success= document.getElementsByClassName("success");
 const button=document.getElementsByClassName("next");
+const err=document.getElementsByClassName("errorname");
+const sign=document.getElementsByClassName("wrapper");
+const title=document.getElementsByClassName("errortitle");
+const fail=document.getElementsByClassName("failed");
 
 
 form.addEventListener("submit",(e)=>{
+  
+    validateName();
     e.preventDefault();
-    if(userName.value.length == "" || userName.value ==null){
-        //errorMsg[0].innerHTML='<div class="error">error</div>';
-        errorMsg[0].style.opacity="1";
-        errorMsg[0].style.display="block";
-        return false;
-      
-        
-    } else{
-        errorMsg[0].style.opacity="0";
-        errorMsg[0].style.display="none";
-
-        return true;
-    }
+   
+    // validate(userName,0,"please enter valid name");
+    // validate(emailAdress,1,"email adress is not correct");
     
 })
 
-// button.addEventListener("click", myFunction);
+// function validate(id,index,message){
+//     if(id==userName){
+//     if(id.value.trim()==="" || id.value== null){
+//         err[index].innerHTML=message;
+//         errorMsg[index].style.opacity="1";
+//         fail[index].style.opacity="1";
+//         errorMsg[index].style.display="block";
+//         success[index].style.opacity="0";
+//        // title[index].innerHTML=title2;
+//        title.innerHTML="Invalid name";
+       
+//     } else{
+//         errorMsg[index].style.opacity="0";
+//         errorMsg[index].style.display="none"
+//         errorMsg[index].innerHTML="";
+//         success[index].style.opacity="1";
+//         //sign[index].content="";
+//         fail[index].style.opacity="0";
+        
+//     }
+// }
+// else if(id==emailAdress){
+    
 
-// function myFunction() {
-//     alert ("Hello World!");
-//   }
-// function validateName(){
-//     userName.innerHTML="nskjds"
-//     // if(userName.value.length == 0){
-//     //     errorMsg[0].style.opacity="1";
-//     //     errorMsg[0].style.display="block";
-//     //     return false;
-//     // }else{
-//     //             errorMsg[0].style.opacity="0";
-//     //             errorMsg[0].style.display="none";
-//     //             return true;
-//     //         }
+//         let regex=/^[^@]+@(redberry)\.ge$/i;
+//         let valid=regex.match(id.value);
+//         if(valid=="true"){
+//             errorMsg[index].style.opacity="0";
+//             errorMsg[index].style.display="none"
+//             errorMsg[index].innerHTML="";
+//             success[index].opacity="1";
+//             sign[index].content="";
+//             fail[index].opacity="0";
+//             return valid;
+          
+//         } else {
+//             err[index].innerHTML=message;
+//             errorMsg[index].style.opacity="1";
+//             errorMsg[index].style.display="block";
+//             success[index].opacity="0";
+//             //title[index].innerHTML=title2;
+//             title.innerHTML="Invalid email";
+//             fail[index].opacity="1";
+
+//         }
     
 // }
+
+// }
+
+function validateName(){
+    let id=userName;
+    let index=0;
+    let message="invalid name";
+    let message2="Please enter valid name"
+    if(id.value.trim()==="" || id.value== null || id.value.trim().length <=2 ||id.value.length==0){
+                err[index].innerHTML=message2;
+                errorMsg[index].style.opacity="1";
+                fail[index].style.opacity="1";
+                errorMsg[index].style.display="block";
+                success[index].style.opacity="0";
+               // title[index].innerHTML=title2;
+                title[index].innerHTML=message;
+               
+            } else{
+                errorMsg[index].style.opacity="0";
+                errorMsg[index].style.display="none"
+                errorMsg[index].innerHTML="";
+                success[index].style.opacity="1";
+                //sign[index].content="";
+                fail[index].style.opacity="0";
+                
+            }
+
+}
 

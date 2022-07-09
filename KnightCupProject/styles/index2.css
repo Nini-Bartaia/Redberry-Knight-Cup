@@ -190,58 +190,108 @@ table {
   left: 5%;
 }
 
-form {
-  position: absolute;
-  top: 40%;
+#form {
+  position: relative;
+  top: 35%;
   left: 5%;
 }
-form .wrapper .error {
-  width: 200px;
-  height: 200px;
-  border: 2px solid red;
-  color: blue;
+#form input {
+  width: 743px;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid inset 0px -1px 0px rgba(0, 0, 0, 0.125);
+  outline: none;
+  background: #FFFFFF;
+  box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  margin-bottom: 48px;
+  line-height: 20px;
+  padding-right: 14px;
+}
+#form input::placeholder {
+  opacity: 1;
+  color: #212529;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: "Open Sans";
+  font-style: normal;
+}
+#form .error {
+  width: 350px;
+  height: 87px;
   font-size: 20px;
   opacity: 0;
   display: none;
   position: absolute;
-  bottom: 100%;
-  right: 20%;
+  bottom: 200%;
+  left: 70%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
 }
-form .wrapper {
+#form .wrapper {
   position: relative;
   display: inline-block;
   z-index: 1;
 }
-form .wrapper .success {
+#form .wrapper .success {
   color: green;
+  opacity: 0;
 }
-form .wrapper {
-  position: relative;
-  display: inline-block;
-  z-index: 1;
+#form .wrapper .failed {
+  color: #DC3545;
+  padding: 10px;
+  opacity: 0;
 }
-form #name::placeholder {
-  font-weight: bold;
-  opacity: 0.5;
-  color: red;
+#form .wrapper .errortitle {
+  color: #DC3545;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  padding-bottom: 5px;
+  vertical-align: text-top;
 }
-form .wrapper:after {
+#form .wrapper .mark {
+  position: absolute;
+  right: 16%;
+  color: #95939A;
+  top: 16%;
+}
+#form .wrapper .line2 {
+  width: auto;
+  height: 0px;
+  border: 1px solid #000000;
+  opacity: 0.05;
+}
+#form .wrapper .errorname {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #212529;
+  padding-left: 10px;
+}
+#form .wrapper:after {
   content: "*";
   position: absolute;
   color: red;
   z-index: 5;
   top: 9px;
 }
-form .wrapper-1:after {
+#form .wrapper-1:after {
   left: 60px;
 }
-form .wrapper-2:after {
+#form .wrapper-2:after {
   left: 135px;
 }
-form .wrapper-3:after {
+#form .wrapper-3:after {
   left: 145px;
 }
-form .wrapper-4:after {
+#form .wrapper-4:after {
   left: 125px;
 }
 
@@ -257,8 +307,8 @@ form .wrapper-4:after {
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  left: 5%;
-  top: 100%;
+  left: -0.5%;
+  top: 120%;
   border: 2px solid #212529;
   gap: 10px;
   width: 100px;
@@ -287,8 +337,8 @@ form .wrapper-4:after {
 .component-2 .next {
   width: 128px;
   height: 53px;
-  left: 68%;
-  top: 100%;
+  left: 66%;
+  top: 120%;
 }
 
 /*# sourceMappingURL=index2.css.map */
