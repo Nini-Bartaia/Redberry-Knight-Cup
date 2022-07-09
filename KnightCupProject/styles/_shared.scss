@@ -75,25 +75,30 @@
         display: inline-block;
         z-index: 1;
     }
-    .wrapper input{
-        width: 743px;
-        height: 30px;
-        border:none;
-        border-bottom: 1px solid inset 0px -1px 0px rgba(0, 0, 0, 0.125);
-        outline: none;
-        background: #FFFFFF;
-        box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
-        border-radius: 4px;
-        margin-bottom: 30px;
-        font-family: 'Open Sans';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        margin-bottom: 48px;
-        line-height: 30px;
-        padding-right: 14px;
-        color: #212529;
+    #name::placeholder{
+        font-weight: bold;
+        opacity: .5;
+        color: red;
     }
+    // .wrapper input{
+    //     width: 743px;
+    //     height: 30px;
+    //     border:none;
+    //     border-bottom: 1px solid inset 0px -1px 0px rgba(0, 0, 0, 0.125);
+    //     outline: none;
+    //     background: #FFFFFF;
+    //     box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
+    //     border-radius: 4px;
+    //     margin-bottom: 30px;
+    //     font-family: 'Open Sans';
+    //     font-style: normal;
+    //     font-weight: 400;
+    //     font-size: 20px;
+    //     margin-bottom: 48px;
+    //     line-height: 30px;
+    //     padding-right: 14px;
+    //     color: #212529;
+    // }
     .wrapper:after {
         content: "*";
         position: absolute;

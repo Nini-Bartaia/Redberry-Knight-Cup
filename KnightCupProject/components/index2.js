@@ -9,8 +9,8 @@ const button=document.getElementsByClassName("next");
 
 form.addEventListener("submit",(e)=>{
     e.preventDefault();
-    if(userName.value.length == 0){
-       
+    if(userName.value.length == "" || userName.value ==null){
+        //errorMsg[0].innerHTML='<div class="error">error</div>';
         errorMsg[0].style.opacity="1";
         errorMsg[0].style.display="block";
         return false;
