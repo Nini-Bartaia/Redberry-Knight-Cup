@@ -102,6 +102,7 @@
     position: relative;
     top: 35%;
     left: 5%;
+    display: block;
      .error{
         width: 350px;
         height: 87px;
@@ -231,6 +232,19 @@
             height: 53px;
             left: 66%;
             top: 120%;
+
+            
+        }
+
+        .form2{
+            position: relative;
+            top: 35%;
+            left: 5%;
+            border: 2px solid red;
+            width: 200px;
+            height: 200px;
+            display: none;
         }
 }
+
 

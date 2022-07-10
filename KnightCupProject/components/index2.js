@@ -10,91 +10,31 @@ const err=document.getElementsByClassName("errorname");
 const sign=document.getElementsByClassName("wrapper");
 const title=document.getElementsByClassName("errortitle");
 const fail=document.getElementsByClassName("failed");
+//const btn= document.getElementsByClassName("btnext");
+const divform=document.getElementsByClassName("form2");
 
 
-form.addEventListener("submit",function(e){
-    // if(!validateName() || !validateEmail() || validatePhone() ){
-  
-    // validateName();
-    // validateEmail();
-    e.preventDefault();
-    //} else{
-        fetch("https://chess-tournament-api.devtest.ge/api/register",{
-            method:'POST',
-            body:JSON.stringify({name:userName,
-                email:emailAdress,
-                phone:phone,
-                date_of_birth:dateTime})
-            
-        })
-        .then(function(response){
-            return response.json()
-        }
-        )
-        .then(function(data){
-            console.log(data);
-        })
-  })
-
+// btnext.addEventListener("click",function(e){
    
-//     // validate(userName,0,"please enter valid name");
-//     // validate(emailAdress,1,"email adress is not correct");
+//      if(!validateName() || !validateEmail() || validatePhone() ){
+     
+       
+  
+//     // validateName();
+//     // validateEmail();
+//     e.preventDefault();
     
-// )
+    
+//     return true;
+// }    
+    
+// }) 
+
+
 
 document.querySelectorAll(".mark" ).forEach(btn =>{
     btn.addEventListener("click",function(){this.parentElement.style.display="none"})});
 
-
-// function validate(id,index,message){
-//     if(id==userName){
-//     if(id.value.trim()==="" || id.value== null){
-//         err[index].innerHTML=message;
-//         errorMsg[index].style.opacity="1";
-//         fail[index].style.opacity="1";
-//         errorMsg[index].style.display="block";
-//         success[index].style.opacity="0";
-//        // title[index].innerHTML=title2;
-//        title.innerHTML="Invalid name";
-       
-//     } else{
-//         errorMsg[index].style.opacity="0";
-//         errorMsg[index].style.display="none"
-//         errorMsg[index].innerHTML="";
-//         success[index].style.opacity="1";
-//         //sign[index].content="";
-//         fail[index].style.opacity="0";
-        
-//     }
-// }
-// else if(id==emailAdress){
-    
-
-//         let regex=/^[^@]+@(redberry)\.ge$/i;
-//         let valid=regex.match(id.value);
-//         if(valid=="true"){
-//             errorMsg[index].style.opacity="0";
-//             errorMsg[index].style.display="none"
-//             errorMsg[index].innerHTML="";
-//             success[index].opacity="1";
-//             sign[index].content="";
-//             fail[index].opacity="0";
-//             return valid;
-          
-//         } else {
-//             err[index].innerHTML=message;
-//             errorMsg[index].style.opacity="1";
-//             errorMsg[index].style.display="block";
-//             success[index].opacity="0";
-//             //title[index].innerHTML=title2;
-//             title.innerHTML="Invalid email";
-//             fail[index].opacity="1";
-
-//         }
-    
-// }
-
-// }
 
 function validateName(){
     let id=userName;
@@ -107,7 +47,6 @@ function validateName(){
                 fail[index].style.opacity="1";
                 errorMsg[index].style.display="block";
                 success[index].style.opacity="0";
-               // title[index].innerHTML=title2;
                 title[index].innerHTML=message;
                 userName.style.background="#FFEFEF";
                 userName.style.color="#DC3545";
@@ -116,13 +55,13 @@ function validateName(){
                
             } else{
                 errorMsg[index].style.opacity="0";
-                errorMsg[index].style.display="none"
-                //errorMsg[index].innerHTML="";
+                errorMsg[index].style.display="none";
                 success[index].style.opacity="1";
-                //sign[index].content="";
                 fail[index].style.opacity="0";
                 userName.style.background="white";
                 userName.style.color="black";
+               
+             
                 return true;
                 
             }
@@ -153,14 +92,13 @@ function validateEmail(){
         fail[index].style.opacity="0";
         emailAdress.style.background="white";
         emailAdress.style.color="black";
+        
         return true;
 
     }
     
 
 }
-
-
 function validatePhone(){
     let id=phone;
     let index=2;
@@ -185,40 +123,17 @@ function validatePhone(){
         fail[index].style.opacity="0";
         phone.style.background="white";
         phone.style.color="black";
+        
         return true;
     }
 }
 
+function showtab(){
 
-// function validate(){
+    form.style.display="none";
+    divform.style.display="block";
     
-//     // validateName();
-//     // validateEmail();
+    }
 
 
-//     if(!validateName() || !validateEmail() || !validatePhone() ){
-//         errorMsg.style.opacity="1";
-//         errorMsg.style.display="block";
-//        return false;
 
-//     }else{
-     
-//         fetch("https://chess-tournament-api.devtest.ge/api/register",{
-//             method:'POST',
-//             body:JSON.stringify({name:userName,
-//                 email:emailAdress,
-//                 phone:phone,
-//                 date_of_birth:dateTime})
-            
-//         })
-//         .then(function(response){
-//             return response.json()
-//         }
-//         )
-//         .then(function(data){
-//             console.log(data);
-//         })
-    
-// }
-// }
-   

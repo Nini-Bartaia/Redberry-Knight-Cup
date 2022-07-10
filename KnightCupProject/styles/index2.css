@@ -194,6 +194,7 @@ table {
   position: relative;
   top: 35%;
   left: 5%;
+  display: block;
 }
 #form input {
   width: 743px;
@@ -348,6 +349,15 @@ table {
   height: 53px;
   left: 66%;
   top: 120%;
+}
+.component-2 .form2 {
+  position: relative;
+  top: 35%;
+  left: 5%;
+  border: 2px solid red;
+  width: 200px;
+  height: 200px;
+  display: none;
 }
 
 /*# sourceMappingURL=index2.css.map */

@@ -36,16 +36,7 @@
             <span class="article">Personal information</span>
             <span class="com2">This is Basic Information Fields</span>
             <form action="/" id="form" >
-                <!-- <div class="wrapper wrapper-1">
-                <input type="text" name="user" id="name" 
-                onfocus="if(this.value==this.defaultValue)this.value=''"
-                onblur="if(this.value=='')this.value=this.defaultValue"
-                value="Name" maxlength="19" required /> <i class="fa-solid fa-circle-check success"></i>
-                <div class="error">error</div>
-             
-             </div> -->
-             <!-- //<label for="name">Name</label> -->
-             <div class="wrapper wrapper-1">
+            <div class="wrapper wrapper-1">
              <input type="text" id="name" placeholder="name" onkeyup="validateName()">
              <i class="fa-solid fa-circle-check success "></i>
              <div class="error"><i class="fa-solid fa-circle-exclamation failed"></i><span class="errortitle"></span><i class="fa-solid fa-xmark mark"></i><div class="line2"></div><span class="errorname"></span></div></div>
@@ -64,30 +55,21 @@
             <i class="fa-solid fa-circle-check success "></i>
             
             <div class="error"><i class="fa-solid fa-circle-exclamation failed"></i><span class="errortitle"></span><i class="fa-solid fa-xmark mark"></i><div class="line2"></div><span class="errorname"></span></div></div>
-             
-                <!-- <div class="wrapper wrapper-2"><input type="email" name="user" id="email"
-                onfocus="if(this.value==this.defaultValue)this.value=''"
-                onblur="if(this.value=='')this.value=this.defaultValue"
-                onfocus="if(this.value==this.defaultValue)this.value=''"
-                onblur="if(this.value=='')this.value=this.defaultValue"
-                value="Email address" maxlength="19" required />
-                <div class="error">error</div>
-            </div> -->
-                <!-- <div class="wrapper wrapper-3"><input type="tel" name="user" id="tel"
-                onfocus="if(this.value==this.defaultValue)this.value=''"
-                onblur="if(this.value=='')this.value=this.defaultValue"
-                value="Phone number" maxlength="19" required />
-                <div class="error">error</div>
-            </div>
-                <div class="wrapper wrapper-4"><input type="text" name="user" id="date"
-                onfocus="if(this.value==this.defaultValue)this.value=''"
-                onblur="if(this.value=='')this.value=this.defaultValue"
-                value="Date of birth" maxlength="19" required />
-                <div class="error">error</div>
-            </div> -->
-
+            
                 <button class="back" type="button"><a href="/index.html">Back</a></button>
-                <button class="next" type="submit">Next<img src="/assets/arrow.png" alt="picture"></button>
+               <button class="next" type="button" onclick="showtab()">Next<img src="/assets/arrow.png" alt="picture"></button>
+               <!-- <a href="" class="btnext" onclick="showtab()">Next <img src="/assets/arrow.png" alt=""></a> -->
+
+                <div class="form2">
+                    
+            <select id="chess" name="chess" >
+            <option value="player1">magnus karlsen</option>
+            <option value="player2">nona gafrindashhvili</option>
+            <option value="player3">bobby fischer</option>
+            <option value="player4">wilhelm steinitz</option>
+          </select>
+                </div>
+                
             </form>
             
   
